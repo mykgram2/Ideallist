@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	body {
+		margin: 0;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		background-color: #2F2A31;
+	}
+	
+	h1, h2 {
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #FFFFFF;
+	}
+	
+	h1 {
+		margin: 40px 0 10px 0;
+		font-size: 36px;
+	}
+	
+		h1 + p {
+			margin: 10px 0 20px 0;
+			padding: 0 40px;
+			font-size: 12px;
+		}
+	
+	h2 {
+		font-size: 18px;
+	}
+	
+	p {
+		margin: 0 auto;
+		padding: 14px 30px;
+	}
+	
+	a {
+		padding: 10px 16px;
+		color: #CCCCCC;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	
+		a:hover {
+			color: #FFFFFF;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	
+/* Header */
+
+	header {
+		height: 90px;
+		background-color: #AAAAAA;
+	}
+	
+	#logo {
+		display: inline-block;
+		margin: 54px 0 0 20px;
+		left: 0;
+		width: 260px;
+	}
+	
+	nav {
+		float: right;
+		margin: 54px 20px 0 0;
+		right: 0;
+		width: 340px;
+	}
+	
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: right;
+		}
+		
+			nav ul li {
+				display: inline;
+				margin: 0;
+			}
+
+/* Section */
+
+	section {
+		margin: 50px auto;
+		width: 680px;
+	}
+	
+	#dashboard-container {
+		position: relative;
+		margin: 50px auto;
+		padding: 40px;
+		height: 480px;
+		color: #FFFFFF;
+		text-align: center;
+		background-color: #AAAAAA;
+	}
+	
+	.nutrients-container {
+		float: left;
+		margin: 0 auto;
+		padding: 0;
+		width: 340px;
+		height: 240px;
+		text-align: center;
+		background-color: #AAAAAA;
+	}
+	
+	.article-header {
+		margin: 10px 30px;
+		padding: 10px;
+		top: 0;
+		height: 48px;
+		color: #888888;
+		line-height: 48px;
+		background-color:#FFFFFF;
+	}
+	
+	.nutrients-list {
+		margin: 0 auto;
+		padding: 20px;
+		top: 0;
+		left: 0;
+		height: 60px;	
+	}
+	
+	.center-align {
+		text-align: center;
+	}
+		
+	footer {
+		position: fixed;
+		bottom: 0;
+		height: 40px;
+		width: 100%;
+		background-color: #444444;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	
+		footer:hover {
+			height: 100px;
+			background-color: #555555;
+		}
