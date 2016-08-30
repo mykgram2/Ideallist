@@ -9,12 +9,14 @@
 	if ($(this).scrollTop() > 1){  
 	
 		$('header').addClass("sticky");
+		$('#hero').addClass("sticky");
 		
 	  }
 	  
 	  else{
 		  
 		$('header').removeClass("sticky");
+		$('#hero').removeClass("sticky");
 		
 	  }
 	  
