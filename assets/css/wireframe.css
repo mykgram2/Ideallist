@@ -4,7 +4,7 @@
 	body {
 		margin: 0;
 		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-		background-color: #E9E9E9;
+		background-color: #EEEEEE;
 	}
 	
 	h1, h2 {
@@ -35,7 +35,7 @@
 		margin: 30px auto;
 		padding: 0 auto;
 		font-size: 14px;
-		color: #777777;
+		color: #444444;
 	}
 	
 		p.large-text {
@@ -56,8 +56,8 @@
 	}
 	
 		a:hover {
-			color: #FF3E5B;
-			border-bottom: solid 2px #FF3E5B;
+			color: #444444;
+			border-bottom: solid 2px #444444;
 		}
 	
 	.button-container {
@@ -115,12 +115,12 @@
 			
 	::-moz-selection {
 		color: #FFFFFF;
-		background: #FF3E5B;
+		background: #444444;
 	}
 	
 	::selection {
 		color: #FFFFFF;
-		background: #FF3E5B;
+		background: #444444;
 	}
 
 	
@@ -150,7 +150,7 @@
 	#header-container {
 		position: relative;
 		margin: 0 auto 40px auto;
-		padding: 0 32px;
+		padding: 0 70px;
 		top: 0;
 		height: 68px;
 		max-width: 1098px;
@@ -204,7 +204,7 @@
 		position: relative;
 		top: 0;
 		height: 500px;
-		background-image: url(../../images/pomegranate.jpg);
+		background-image: url("../../images/pomegranate.jpg");
 		background-size: 100%;
 		background-position: center -60px;
 		background-attachment: fixed;
@@ -257,7 +257,7 @@
 		-moz-animation: AnimationName 40s ease infinite;
 		animation: AnimationName 40s ease infinite;
 		
-		opacity: 0.7;
+		opacity: 0.55;
 		z-index: 10;
 	}
 		
@@ -279,7 +279,7 @@
 	
 	.content {
 		margin: 60px auto;
-		padding: 0 40px;
+		padding: 0 80px;
 		max-width: 1080px;
 		color: #777777;
 	}
@@ -304,6 +304,7 @@
 		
 	.accordion-panel {
 		display: none;
+		padding: 0 0 40px 0;
 		background-color: #FFFFFF;
 		overflow: hidden;
 	}
@@ -312,7 +313,7 @@
 		position: relative;
 		margin: 0 auto;
 		padding: 26px 40px 14px 40px;
-		background-color: #F7F7F7;
+		background-color: #F6F6F6;
 		z-index: 100;
 	}
 	
@@ -574,7 +575,7 @@
 	.tab-panel {
 		display: none;
 		position: absolute;
-		margin: 0 0 0 40px;
+		margin: 0 0 0 30px;
 		padding: 0 20px;
 		width: 400px;
 		z-index: 1;
