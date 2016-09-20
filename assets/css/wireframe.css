@@ -173,7 +173,7 @@
 		position: relative;
 		top
 		height: 620px;
-		background-image: url(images/protein.jpg);
+		background-image: url(../../images/protein.jpg);
 		background-size: 100%;
 		background-position: center -60px;
 		background-attachment: fixed;
