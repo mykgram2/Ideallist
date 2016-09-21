@@ -99,6 +99,29 @@ $(document).ready(function() {
 
  		return false; 
  	})
+ }
+ function displayReport(){
+ 	queryURL = "http://api.nal.usda.gov/ndb/nutrients/?format=json&api_key=xKMO5OobwzjBeREFQBMQOV4624wMuprJAXFhEqfw&nutrients=204"
+ 	$.ajax({url: queryURL, method: 'GET'}).done(function(response){
+ 		console.log(response.report.foods.length);
+
+ 		$('#emptyBody').empty();
+
+ 	for (i = 0; i < response.report.foods.length; i++){
+
+ 		 var nutriDiv = $('<div>');
+ 		 nutriDiv.text(JSON.stringify(response.report.foods[i].nutrients));
+ 		 var nameDiv = $('<p>');
+ 		 nameDiv.text(JSON.stringify(response.report.foods[i].name));
+
+ 		 $('#emptyBody').append(nutriDiv);
+ 		 $(nutriDiv).append(nameDiv);
+
+ 	}
+ 		return false; 
+ });
+
  }	
-$('#lipid').on('click', displayNutri());	
+// $('#lipid').on('click', displayReport());
+displayReport();	
 });
