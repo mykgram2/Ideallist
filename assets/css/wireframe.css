@@ -527,7 +527,8 @@
 	.nutrient-list {
 		display: inline-block;
 		margin: 0 0 30px 136px;
-		width: 280px;
+		padding-right: 20px;
+		width: 660px;
 	}
 				
 		.nutrient-list li a {
@@ -574,10 +575,9 @@
 	
 	.tab-panel {
 		display: none;
-		position: absolute;
 		margin: 0 0 0 30px;
-		padding: 0 20px;
-		width: 400px;
+		padding: 40px 8px;
+		width: 580px;
 		z-index: 1;
 	}
 	
@@ -594,13 +594,13 @@
 			border-top: solid 1px #7fe04f;
 		}
 		
-		.tab-panel.proximates p {
+		/* .tab-panel.proximates p {
 			border-left: solid 2px #67c8ff;
 		}
 		
 		.tab-panel.minerals p {
 			border-left: solid 2px #7fe04f;
-		}
+		} */
 	
 		.tab-panel.active {
 			display: inline;
