@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 /* CSS Document */
 
@@ -452,4 +453,750 @@
 	
 		footer:hover {
 			background-color: #555555;
+=======
+@charset "UTF-8";
+/* CSS Document */
+
+	body {
+		margin: 0;
+		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		background-color: #EEEEEE;
+	}
+	
+	h1, h2 {
+		font-weight: bold;
+	}
+	
+	h1 {
+		font-size: 40px;
+		text-transform: uppercase;
+	}
+	
+		h1 + p {
+			margin: -25px auto 50px auto;
+			padding: 0;
+			font-size: 18px;
+		}
+	
+	h2 {
+		font-size: 28px;
+	}
+	
+	h3 {
+		font-size: 21px;
+		font-weight: bold;
+	}
+	
+	p {
+		margin: 30px auto;
+		padding: 0 auto;
+		font-size: 14px;
+		color: #444444;
+	}
+	
+		p.large-text {
+			font-size: 21px;
+			line-height: 34px;
+		}
+		
+		p.small-text {
+			font-size: 16px;
+			line-height: 28px;
+		}
+	
+	a {
+		color: #999999;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	
+		a:hover {
+			color: #444444;
+			border-bottom: solid 2px #444444;
+		}
+	
+	.button-container {
+		margin: 28px auto;
+		padding: 0 40px;
+		text-align: center;
+		background-color: transparent;
+	}
+		
+	.button {
+		display: inline-block;
+		margin: 10px 20px;
+		padding: 8px 26px;
+		top: 0;
+		height: 48px;
+		font-size: 15px;
+		line-height: 48px;
+	}
+	
+		.button:hover {
+			cursor: pointer;
+		}
+	
+		.button.light {
+			color: #FFFFFF;
+			background-color: transparent;
+			border: solid 1px #FFFFFF;
+		}
+		
+			.button.light:hover {
+				color: #999999;
+				background-color: #FFFFFF;
+			}
+			
+		.button.dark {
+			color: #999999;
+			background-color: transparent;
+			border: solid 1px #999999;
+		}
+		
+			.button.dark:hover {
+				color: #FFFFFF;
+				background-color: #999999;
+			}
+			
+	.button-small {
+		margin: 0;
+		padding: 4px 16px;
+		top: 0;
+		height: 38px;
+		font-size: 14px;
+		font-weight: normal;
+		line-height: 38px;
+	}
+			
+	::-moz-selection {
+		color: #FFFFFF;
+		background: #444444;
+	}
+	
+	::selection {
+		color: #FFFFFF;
+		background: #444444;
+	}
+
+	
+/* Header */
+
+	header {
+		position: fixed;
+		margin: 0;
+		top: 0;
+		height: 68px;
+		width: 100%;
+		background-color: #FFFFFF;
+		border-bottom: solid 1px #FFFFFF;
+		box-shadow: 0 -2px 6px 0 #444444;
+		-webkit-transition: all 200ms ease-in-out;
+		-moz-transition: all 200ms ease-in-out;
+		-o-transition: all 200ms ease-in-out;
+		transition: all 200ms ease-in-out;
+		z-index: 1000;
+	}
+	
+		header.sticky {
+			position: fixed;
+			top: -24px;
+		}
+	
+	#header-container {
+		position: relative;
+		margin: 0 auto 40px auto;
+		padding: 0 70px;
+		top: 0;
+		height: 68px;
+		max-width: 1098px;
+		background-color: transparent;
+		z-index: 1001;
+	}
+	
+	#logo {
+		display: inline-block;
+		margin: 34px 0 0 0;
+		left: 0;
+		width: 260px;
+	}
+	
+		#logo a {
+			padding: 10px 10px 8px 10px;
+		}
+	
+	nav {
+		float: right;
+		margin: 34px 0 0 0;
+		right: 0;
+		width: 340px;
+	}
+	
+		nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			text-align: right;
+		}
+		
+			nav ul li {
+				display: inline;
+				margin: 0;
+				padding: 0;
+			}
+			
+				nav ul li a {
+					margin: 0;
+					padding: 10px 10px 8px 10px;
+				}
+
+/* Section */
+
+	section {
+		width: 100%;
+	}
+	
+	#hero {
+		position: relative;
+		top: 0;
+		height: 500px;
+		background-image: url("../../images/pomegranate.jpg");
+		background-size: 100%;
+		background-position: center -60px;
+		background-attachment: fixed;
+		overflow: hidden;
+	}
+	
+		/* #hero.sticky {
+			top: -80px;
+			height: 600px;
+			padding: 70px 0 0 0;
+		} */
+	
+	.image-span {
+		color: #FFFFFF;
+		background-color: #999999;
+	}
+	
+	.banner {
+		position: relative;
+		margin: 0 auto;
+		padding: 60px 0;
+		width: 80%;
+		height: 320px;
+		max-width: 920px;
+		color: #FFFFFF;
+		text-align: center;
+		z-index: 100;
+	}
+	
+		.banner p {
+			color: #FFFFFF;
+		}
+		
+	.banner.hero-banner {
+		margin: 0 auto;
+		padding: 180px 0 90px 0;
+		max-width: 720px;
+	}
+	
+	.gradient {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		background: linear-gradient(241deg, #FF3E5B, #67c8ff, #fc95fb, #fab63f);
+		background-size: 600% 600%;
+		
+		-webkit-animation: AnimationName 40s ease infinite;
+		-moz-animation: AnimationName 40s ease infinite;
+		animation: AnimationName 40s ease infinite;
+		
+		opacity: 0.55;
+		z-index: 10;
+	}
+		
+	@-webkit-keyframes AnimationName {
+		0%{background-position:0% 51%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 51%}
+	}
+	@-moz-keyframes AnimationName {
+		0%{background-position:0% 51%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 51%}
+	}
+	@keyframes AnimationName {
+		0%{background-position:0% 51%}
+		50%{background-position:100% 50%}
+		100%{background-position:0% 51%}
+	}
+	
+	.content {
+		margin: 60px auto;
+		padding: 0 80px;
+		max-width: 1080px;
+		color: #777777;
+	}
+	
+		.content h2, .content h3 {
+			color: #999999;
+		}
+		
+	.accordion {
+		list-style-type: none;
+		margin: 60px auto;
+		padding: 0;
+		height: auto;
+		-webkit-box-shadow: 0 0 5px 0 #AAAAAA;
+		-moz-box-shadow: 0 0 5px 0 #AAAAAA;
+		box-shadow: 0 0 5px 0 #AAAAAA;
+	}
+	
+		.accordion > li {
+			border-bottom: solid 1px #AAAAAA;
+		}
+		
+	.accordion-panel {
+		display: none;
+		padding: 0 0 40px 0;
+		background-color: #FFFFFF;
+		overflow: hidden;
+	}
+	
+	.modular-section {
+		position: relative;
+		margin: 0 auto;
+		padding: 26px 40px 14px 40px;
+		background-color: #F6F6F6;
+		z-index: 100;
+	}
+	
+		.modular-section h3 {
+			margin: 0 20px 10px 0;
+			padding: 0;
+		}
+		
+		.modular-section p {
+			margin: 0 100px 30px 0;
+			padding: 0;
+		}
+		
+		.modular-section:hover {
+			cursor: pointer;
+			background-color: #FFFFFF;
+		}
+		
+		.accordion-control.active.modular-section, .accordion-control.active .accordion-panel {
+			background-color: #FFFFFF;
+		}
+		
+		.accordion-control.active .modular-section .p {
+			border-bottom: solid 1px #AAAAAA;
+		}
+		
+			/* .modular-section.lipids:hover {
+				cursor: pointer;
+				color: #FFFFFF;
+				background-color: #fab63f;
+			}
+			
+			.modular-section.minerals:hover {
+				cursor: pointer;
+				color: #FFFFFF;
+				background-color: #7fe04f;
+			}
+			
+			.modular-section.proximates:hover {
+				cursor: pointer;
+				color: #FFFFFF;
+				background-color: #67c8ff;
+			}
+			
+			.modular-section.vitamins:hover {
+				cursor: pointer;
+				color: #FFFFFF;
+				background-color: #fc95fb;
+			} */
+	
+	.letter-symbol {
+		float: left;
+		margin: 0 40px 40px 0;
+		width: 100px;
+		height: 100px;
+		color: #AAAAAA;
+		text-align: center;
+		font-size: 48px;
+		line-height: 106px;
+		border: solid 3px #AAAAAA;
+		-webkit-border-radius: 52px;
+		-moz-border-radius: 52px;
+		border-radius: 52px;
+	}
+	
+	.arrow {
+		position: absolute;
+		margin: 40px;
+		top: 40px;
+		right: 30px;
+		width: 24px;
+		height: 24px;
+		border-top: solid 3px #CCCCCC;
+		border-right: solid 3px #CCCCCC;
+		-ms-transform: rotate(45deg); /* IE 9 */
+    	-webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    	transform: rotate(45deg);
+		-webkit-transition: transform 200ms ease-in-out;
+		-moz-transition: transform 200ms ease-in-out;
+		-o-transition: transform 200ms ease-in-out;
+		transition: transform 200ms ease-in-out;
+	}
+	
+		.accordion-control.active .arrow {
+			-ms-transform: rotate(135deg); /* IE 9 */
+    		-webkit-transform: rotate(135deg); /* Chrome, Safari, Opera */
+    		transform: rotate(135deg);
+		}
+		
+		
+	/* LIPIDS SECTION */
+	
+		/* .letter-symbol.lipids {
+			color: #fab63f;
+			border: solid 3px #fab63f;
+		} */
+	
+		/* .modular-section.lipids:hover .letter-symbol {
+			color: #FFFFFF;
+			background-color: #fab63f;
+			border-color: #fab63f;
+		} */
+		
+		.modular-section.lipids:hover .letter-symbol, .modular-section.lipids:hover h3, /* .modular-section.lipids:hover p, */ .modular-section.lipids:hover .arrow {
+			color: #fab63f;
+			border-color: #fab63f;
+		}
+		
+		.lipids.accordion-control.active .letter-symbol {
+			color: #fab63f;
+			border-color: #fab63f;
+		}
+		
+			/* .lipids.accordion-control.active:hover .letter-symbol {
+				color: #FFFFFF;
+				background-color: #fab63f;
+				border-color: #fab63f;
+			} */
+		
+		
+	/* MINERALS SECTION HOVER */
+	
+		/* .letter-symbol.minerals {
+			color: #7fe04f;
+			border: solid 3px #7fe04f;
+		} */
+		
+		/* .modular-section.minerals:hover .letter-symbol {
+			color: #FFFFFF;
+			background-color: #7fe04f;
+			border-color: #7fe04f;
+		} */
+		
+		.modular-section.minerals:hover .letter-symbol, .modular-section.minerals:hover h3, /* .modular-section.minerals:hover p, */ .modular-section.minerals:hover .arrow  {
+			color: #7fe04f;
+			border-color: #7fe04f;
+		}
+		
+		.minerals.accordion-control.active .letter-symbol {
+			color: #7fe04f;
+			border-color: #7fe04f;
+		}
+		
+			/* .minerals.accordion-control.active:hover .letter-symbol {
+				color: #FFFFFF;
+				background-color: #7fe04f;
+				border-color: #7fe04f;
+			} */
+
+
+	/* PROXIMATES SECTION HOVER */
+	
+		/* .letter-symbol.proximates {
+			color: #67c8ff;
+			border: solid 3px #67c8ff;
+		} */
+		
+		/* .modular-section.proximates:hover .letter-symbol {
+			color: #FFFFFF;
+			background-color: #67c8ff;
+			border-color: #67c8ff;
+		} */
+		
+		.modular-section.proximates:hover .letter-symbol, .modular-section.proximates:hover h3, /* .modular-section.proximates:hover p, */ .modular-section.proximates:hover .arrow {
+			color: #67c8ff;
+			border-color: #67c8ff;
+		}
+		
+		.proximates.accordion-control.active .letter-symbol {
+			color: #67c8ff;
+			border-color: #67c8ff;
+		}
+		
+			/* .proximates.accordion-control.active:hover .letter-symbol {
+				color: #FFFFFF;
+				background-color: #67c8ff;
+				border-color: #67c8ff;
+			} */
+			
+		
+	/* VITAMINS SECTION HOVER */
+	
+		/* .letter-symbol.vitamins {
+			color: #fc95fb;
+			border: solid 3px #fc95fb;
+		} */
+	
+		/* .modular-section.vitamins:hover .letter-symbol {
+			color: #FFFFFF;
+			background-color: #fc95fb;
+			border-color: #fc95fb;
+		} */
+		
+		.modular-section.vitamins:hover .letter-symbol, .modular-section.vitamins:hover h3, /* .modular-section.vitamins:hover p, */ .modular-section.vitamins:hover .arrow {
+			color: #fc95fb;
+			border-color: #fc95fb;
+		}
+		
+		.vitamins.accordion-control.active .letter-symbol {
+			color: #fc95fb;
+			border-color: #fc95fb;
+		}
+		
+			/* .vitamins.accordion-control.active:hover .letter-symbol {
+				color: #FFFFFF;
+				background-color: #fc95fb;
+				border-color: #fc95fb;
+			} */
+
+		
+	.nutrient-list {
+		display: inline-block;
+		margin: 0 0 30px 136px;
+		width: 280px;
+	}
+				
+		.nutrient-list li a {
+			display: block;
+			padding: 4px 10px;
+			width: 100%;
+			color: #777777;
+			font-size: 16px;
+			font-weight: normal;
+			text-transform: capitalize;
+			border-bottom: solid 1px #CCCCCC;
+		}
+			
+			.nutrient-list li a:hover {
+				color: #777777;
+				background-color: #EEEEEE;
+				/* border-bottom: solid 1px #E5E5E5; */
+			}
+			
+			.nutrient-list.proximates li a.active {
+				color: #FFFFFF;
+				background-color: #67c8ff;
+				border-bottom: solid 1px #67c8ff;
+			}
+			
+			.nutrient-list.minerals li a.active {
+				color: #FFFFFF;
+				background-color: #7fe04f;
+				border-bottom: solid 1px #7fe04f;
+			}
+			
+			.nutrient-list.vitamins li a.active {
+				color: #FFFFFF;
+				background-color: #fc95fb;
+				border-bottom: solid 1px #fc95fb;
+			}
+			
+			.nutrient-list.lipids li a.active {
+				color: #FFFFFF;
+				background-color: #fab63f;
+				border-bottom: solid 1px #fab63f;
+			}
+			
+	
+	.tab-panel {
+		display: none;
+		position: absolute;
+		margin: 0 0 0 30px;
+		padding: 0 20px;
+		width: 400px;
+		z-index: 1;
+	}
+	
+		.tab-panel p {
+			margin: 0 auto;
+			padding-left: 30px;
+		}
+	
+		.modular-section.proximates .tab-panel.active {
+			border-top: solid 1px #67c8ff;
+		}
+		
+		.modular-section.minerals .tab-panel.active {
+			border-top: solid 1px #7fe04f;
+		}
+		
+		.tab-panel.proximates p {
+			border-left: solid 2px #67c8ff;
+		}
+		
+		.tab-panel.minerals p {
+			border-left: solid 2px #7fe04f;
+		}
+	
+		.tab-panel.active {
+			display: inline;
+		}
+		
+		.tab-panel.button-container {
+			padding-left: 30px;
+		}
+		
+	.button-small.proximates {
+		color: #67c8ff;
+		background-color: transparent;
+		border: solid 1px #67c8ff;
+	}
+		
+	.button-small.proximates {
+		color: #67c8ff;
+		background-color: transparent;
+		border: solid 1px #67c8ff;
+	}
+		
+		.button-small.proximates:hover {
+			color: #FFFFFF;
+			background-color: #67c8ff;
+			border: solid 1px #67c8ff;
+		}
+		
+	.button-small.minerals {
+		color: #7fe04f;
+		background-color: transparent;
+		border: solid 1px #7fe04f;
+	}
+		
+		.button-small.minerals:hover {
+			color: #FFFFFF;
+			background-color: #7fe04f;
+			border: solid 1px #7fe04f;
+		}
+		
+	.button-small.vitamins {
+		color: #fc95fb;
+		background-color: transparent;
+		border: solid 1px #fc95fb;
+	}
+		
+		.button-small.vitamins:hover {
+			color: #FFFFFF;
+			background-color: #fc95fb;
+			border: solid 1px #fc95fb;
+		}
+		
+	.button-small.lipids {
+		color: #fab63f;
+		background-color: transparent;
+		border: solid 1px #fab63f;
+	}
+		
+		.button-small.lipids:hover {
+			color: #FFFFFF;
+			background-color: #fab63f;
+			border: solid 1px #fab63f;
+		}
+	
+	.grid-block {
+		display: inline-block;
+		position: relative;
+		margin: 20px 5px;
+		padding: 0;
+		width: 22%;
+		height: auto;
+		background-color: #AAAAAA;
+		border: solid 1px #CCCCCC;
+		box-shadow: 0 1px 2px 0 #EEEEEE;
+		/* background-image: url(../../../website/images/rome-apple.jpg);
+		background-size: cover; */
+	}
+	
+	.grid-block-content {
+		position: absolute;
+		visibility: hidden;
+		top: 0;
+		left: 0;
+		margin: 0;
+		padding: 10px 20px;
+		height: 170px;
+		color: #FFFFFF;
+		text-align: center;
+		line-height: 18px;
+		background-color: transparent;
+		-webkit-transition: all 300ms ease-in-out;
+		-moz-transition: all 300ms ease-in-out;
+		-o-transition: all 300ms ease-in-out;
+		transition: all 300ms ease-in-out;
+		z-index: 11;
+	}
+		.grid-block-content p {
+			color: #FFFFFF;
+			font-size: 14px;
+		}
+	
+		.grid-block:hover .grid-block-content {
+			visibility: visible;
+			background-color: rgba(0, 0, 0, 0.6);
+		}
+	
+	.grid-block-image {
+		padding: 0;
+		width: 100%;
+		height: 190px;
+		background-color: #444444;
+		/* background-image: url(../../../website/images/rome-apple.jpg);
+		background-size: cover; */
+		z-index: 10;
+	}
+	
+	.grid-block-name {
+		margin: 0;
+		padding: 10px;
+		color: #AAAAAA;
+		text-align: center;
+		line-height: 10px;
+		background-color: #FFFFFF;	
+	}
+	
+	.hideme {
+		opacity: 0;
+	}
+			
+	footer {
+		height: 320px;
+		width: 100%;
+		background-color: #444444;
+		-webkit-transition: all 0.3s ease-in-out;
+		-moz-transition: all 0.3s ease-in-out;
+		-ms-transition: all 0.3s ease-in-out;
+		-o-transition: all 0.3s ease-in-out;
+		transition: all 0.3s ease-in-out;
+	}
+	
+		footer:hover {
+			background-color: #555555;
+>>>>>>> 18490014f3f223eb48548dd0ce6d2a1a160f09b2
 		}
