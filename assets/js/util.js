@@ -104,24 +104,31 @@ $(document).ready(function() {
  	queryURL = "http://api.nal.usda.gov/ndb/nutrients/?format=json&api_key=xKMO5OobwzjBeREFQBMQOV4624wMuprJAXFhEqfw&nutrients=204"
  	$.ajax({url: queryURL, method: 'GET'}).done(function(response){
  		console.log(response.report.foods.length);
+ 		console.log(response.report);
+ 		var results = response.report;	
+ 		$('.results').empty();
 
- 		$('#emptyBody').empty();
+ 	for (i = 0; i < results.foods.length; i++){
 
- 	for (i = 0; i < response.report.foods.length; i++){
-
- 		 var nutriDiv = $('<div>');
- 		 nutriDiv.text(JSON.stringify(response.report.foods[i].nutrients));
+ 		 var nutriDiv = $('<li>');
+ 		 nutriDiv.text(JSON.stringify(results.foods[i].nutrients));
  		 var nameDiv = $('<p>');
- 		 nameDiv.text(JSON.stringify(response.report.foods[i].name));
+ 		 nameDiv.text(JSON.stringify(results.foods[i].name));
 
- 		 $('#emptyBody').append(nutriDiv);
+ 		 $('.results').append(nutriDiv);
  		 $(nutriDiv).append(nameDiv);
 
  	}
  		return false; 
  });
 
- }	
+ }
+ $("#reset").on('click', function(){		
+ 		
+ 	window.location.reload(true);
+ 	
+ 	});		
+
 // $('#lipid').on('click', displayReport());
 displayReport();	
 });
