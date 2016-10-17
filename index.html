@@ -4,25 +4,25 @@
         <title>Untitled Document</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/wireframe.css"></link>
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,300" rel="stylesheet">
     
     </head>
 
     <body>
         
         <!-- Banner -->
-        	<section id="hero" class="image-span">
+        	<section id="hero" class="image-span home">
                 
                 <header>
                     <div id="header-container">
                         <div id="logo">
-                            <a href="#">Ideallist Nutrition App</a>
+                            <a href="/">Ideallist Nutrition App</a>
                         </div>
                         <nav>
                             <ul>
-                                <li><a href="results.html">Foods</a></li>
-                                <li><a href="nutrition/">Nutrition</a></li>
+                                <li><a href="foods/">Foods</a></li>
+                                <li><a href="nutrients.html">Nutrition</a></li>
                                 <li><a href="#">Recipes</a></li>
-                                <li id="reset"><a href="#">Reset</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -52,58 +52,131 @@
             
         <!-- Section One -->
         	<section id="one">
-            	<article class="content centered">
-                    <br />
-                	<h2 class="hideme">The Importance of Nutrients</h2>
-                    <hr class="short hideme" />
-                    <p class="small-text narrow hideme">Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>
-                        <div class="button-container hideme">
-                            <a class="button dark">View Nutrients</a>
-                        </div>
-                        <!-- <div class="button-container tab-list">
-                                <a class="tab-control letter-symbol amino-acids" href="#tab1">A</a>
-                                <a class="tab-control letter-symbol lipids">L</a>
-                                <a class="tab-control letter-symbol minerals">M</a>
-                                <a class="tab-control letter-symbol proximates" href="#tab4">P</a>
-                                <a class="tab-control letter-symbol vitamins">V</a>
-                            </div>
-                            <div id="tab1" class="tab-panel active"></div>
-                            <div id="tab2" class="tab-panel"></div>
-                            <div id="tab3" class="tab-panel"></div>
-                            <div id="tab4" class="tab-panel">
-                                <ol class="accordion nutrient-list proximates">
-                                    <li class="accordion-control"><a>Water</a></li>
-                                    <div class="accordion-panel proximates">
-                                        <p>Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>
-                                        <div class="button-container">
-                                            <a class="button dark button-small proximates">Highest</a>
-                                            <a class="button dark button-small proximates">Lowest</a>
-                                        </div>
-                                    </div>
-                                    <li class="accordion-control"><a>Energy</a></li>
-                                    <div class="accordion-panel proximates">
-                                        <p>Aliquam eu arcu sapien. Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non.</p>
-                                        <div class="button-container">
-                                            <a class="button dark button-small proximates">Highest</a>
-                                            <a class="button dark button-small proximates">Lowest</a>
-                                        </div>
-                                    </div>
-                                    <li class="accordion-control"><a  href="#tab-3">Protein</a></li>
-                                    <li class="accordion-control"><a  href="#tab-4">Total Lipids (fat)</a></li>
-                                    <li class="accordion-control"><a  href="#tab-5">Ash</a></li>
-                                    <li class="accordion-control"><a  href="#tab-6">Carbohydrate (by difference)</a></li>
-                                    <li class="accordion-control"><a  href="#tab-7">Fiber (total dietary)</a></li>
-                                    <li class="accordion-control"><a  href="#tab-8">Sugars (total)</a></li>
+            	<br />
+            	<article class="content full">
+                	<h2 class="hideme">The Nutrients</h2>
+                    <hr class="short"></hr>
+                    <p class="narrow hideme">Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>                  
+                    
+                    <div class="button-container tab-list">
+                    	<a class="tab-control letter-symbol amino-acids" href="#tab1">A</a>
+                    	<a class="tab-control letter-symbol lipids">L</a>
+                    	<a class="tab-control letter-symbol minerals">M</a>
+                    	<a class="tab-control letter-symbol proximates" href="#tab4">P</a>
+                    	<a class="tab-control letter-symbol vitamins">V</a>
+                    </div>
+                            
+                    <div id="tab1" class="tab-panel"></div>
+                    <div id="tab2" class="tab-panel"></div>
+                    <div id="tab3" class="tab-panel"></div>
+                    <div id="tab4" class="tab-panel active proximates">
+                    	<h2 class="hideme">Proximates</h2>   
+                    	<div class="nutrient-list-container">
+                        	<div class="nutrient-list-inner-container">
+                                <ol class="tab-list nutrient-list proximates">
+                                    <li><a class="tab-control active" href="#tab-1">Water</a></li>
+                                    <li><a class="tab-control" href="#tab-2">Energy</a></li>
+                                    <li><a class="tab-control" href="#tab-3">Protein</a></li>
+                                    <li><a class="tab-control" href="#tab-4">Total Lipids (fat)</a></li>
+                                    <li><a class="tab-control" href="#tab-5">Ash</a></li>
+                                    <li><a class="tab-control" href="#tab-6">Carbohydrate (by difference)</a></li>
+                                    <li><a class="tab-control" href="#tab-7">Fiber (total dietary)</a></li>
+                                    <li><a class="tab-control" href="#tab-8">Sugars (total)</a></li>
                                 </ol>
-                            </div>
-                            <div id="tab5" class="tab-panel"></div>
-                        </div> -->
+                                
+                                <div id="tab-1" class="tab-panel-nutrients active proximates">
+                                	
+                                    <ol class="tab-list nutrient-info-list proximates">
+                                        <li><a class="tab-control active" href="#tab-a">Intro</a></li>
+                                        <li><a class="tab-control" href="#tab-b">Benefits</a></li>
+                                        <li><a class="tab-control" href="#tab-c">Pairing</a></li>
+                                        <li><a class="tab-control" href="#tab-d">Deficiencies</a></li>
+                                    </ol>
+                                    
+                                    <div id="tab-a" class="tab-panel-descriptions active">
+                                    	<p>Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>                                    
+                                    </div>
+                                    
+                                    <div id="tab-b" class="tab-panel-descriptions">
+                                    	<p>Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.Aliquam eu arcu sapien.</p>                                    
+                                    </div>
+                                    
+                                    <div id="tab-c" class="tab-panel-descriptions">
+                                    	<p>Aliquam eu arcu sapien. Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non.</p>                                    
+                                    </div>
+                                    
+                                    <div id="tab-d" class="tab-panel-descriptions">
+                                    	<p>Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>                                    
+                                    </div>
+                                    
+                                    <div class="button-container">
+                                    	<a class="button dark button-small proximates">Highest</a>
+                                    	<a class="button dark button-small proximates">Lowest</a>
+                                    </div>
+                                                                    
+                                </div>
+                                
+                                <div id="tab-2" class="tab-panel-nutrients proximates">
+                                	<p>Aliquam eu arcu sapien. Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small proximates">Highest</a>
+                                        <a class="button dark button-small proximates">Lowest</a>
+                                    </div>
+                                </div>
+                                
+                                <div id="tab-3" class="tab-panel-nutrients proximates">
+                                	<p>Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>
+                                	<div class="button-container">
+                                        <a class="button dark button-small proximates">Highest</a>
+                                        <a class="button dark button-small proximates">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-4" class="tab-panel-nutrients proximates">
+                                	<p>Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.Aliquam eu arcu sapien.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small proximates">Highest</a>
+                                        <a class="button dark button-small proximates">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-5" class="tab-panel-nutrients proximates">
+                                	<p>Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non. Pellentesque ac cursus libero.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small proximates">Highest</a>
+                                        <a class="button dark button-small proximates">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-6" class="tab-panel-nutrients proximates">
+                                	<p>Ut varius quam diam, vitae tempus sem cursus non. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small proximates">Highest</a>
+                                        <a class="button dark button-small proximates">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-7" class="tab-panel-nutrients proximates">
+                                	<p>Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat. Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small proximates">Highest</a>
+                                        <a class="button dark button-small proximates">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-8" class="tab-panel-nutrients proximates">
+                                	<p>Donec porttitor pharetra felis vitae volutpat. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small proximates">Highest</a>
+                                        <a class="button dark button-small proximates">Lowest</a>
+                                    </div>
+                                </div>
+                                                             
+                            </div> <!-- NUTRIENT LIST INNER CONTAINER -->
+                                  
+                        </div> <!-- NUTRIENT LIST CONTAINER -->
+                    
+                    </div> <!-- TAB 4 -->
+                    
+                	<div id="tab5" class="tab-panel"></div>
+                    
                 </article>
             </section>
-            
-            <br /> 
-            <br />
-            <br />
             
             
          <!-- Section Two -->
@@ -116,11 +189,13 @@
                     </div>
                 </article>
             </section>
-            
+
+
+
          <!-- Section Three -->
         	<section id="three">
             	<article class="content">
-                    <h2>Browse our Superfoods</h2>
+                    <h2 class="hideme">Browse our Superfoods</h2>
                     <br />
                     <div class="grid-block hideme">
                     	<div class="grid-block-content">
