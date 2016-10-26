@@ -55,19 +55,22 @@
             	<br />
             	<article class="content full">
                 	<h2 class="hideme">The Nutrients</h2>
-                    <hr class="short"></hr>
-                    <p class="narrow hideme">Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>                  
+                    <hr class="short hideme"></hr>
+                    <p class="narrow hideme">Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>
+                    <h4 class="hideme">Select a Category to Learn More</h4> 
+                    <!-- <div><img src="images/curly-bracket.svg" /></div> -->        
                     
-                    <div class="button-container tab-list">
-                    	<a class="tab-control letter-symbol amino-acids" href="#tab1">A</a>
-                    	<a class="tab-control letter-symbol lipids" href="#tab2">L</a>
-                    	<a class="tab-control letter-symbol minerals" href="#tab3">M</a>
-                    	<a class="tab-control letter-symbol proximates active" href="#tab4">P</a>
-                    	<a class="tab-control letter-symbol vitamins" href="#tab5">V</a>
+                    <div class="button-container tab-list hideme">
+                    	<a class="tab-control letter-symbol amino-acids" href="#tab-amino-acids">A</a>
+                    	<!-- <a class="tab-control letter-symbol lipids" href="#tab-lipids">L</a> -->
+                    	<a class="tab-control letter-symbol minerals" href="#tab-minerals">M</a>
+                    	<a class="tab-control letter-symbol proximates" href="#tab-proximates">P</a>
+                    	<a class="tab-control letter-symbol vitamins" href="#tab-vitamins">V</a>
                     </div>
                             
-                    <div id="tab1" class="tab-panel">
-                    	<h2 class="hideme">Amino-acids</h2>   
+                    <div id="tab-amino-acids" class="tab-panel">
+                    	<h2 class="hideme">Amino-acids</h2>
+                        <p class="narrow hideme">Mauris pellentesque vel lorem non iaculis. Donec porttitor pharetra felis vitae volutpat. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>
                     	<div class="nutrient-list-container">
                         	<div class="nutrient-list-inner-container">
                                 <ol class="tab-list nutrient-list amino-acids">
@@ -84,7 +87,7 @@
                                 <div id="tab-1" class="tab-panel-nutrients active amino-acids">
                                 	
                                     <ol class="tab-list nutrient-info-list amino-acids">
-                                        <li><a class="tab-control active" href="#tab-a">Intro</a></li>
+                                        <li><a class="tab-control active" href="#tab-a">Overview</a></li>
                                         <li><a class="tab-control" href="#tab-b">Benefits</a></li>
                                         <li><a class="tab-control" href="#tab-c">Pairing</a></li>
                                         <li><a class="tab-control" href="#tab-d">Deficiencies</a></li>
@@ -171,12 +174,13 @@
                     </div> <!-- TAB 1 -->
                             
                             
-                    <div id="tab2" class="tab-panel"></div>
+                    <div id="tab-lipids" class="tab-panel"></div>
                     
                     
                     
-                    <div id="tab3" class="tab-panel">
-                    	<h2 class="hideme">Minerals</h2>   
+                    <div id="tab-minerals" class="tab-panel">
+                    	<h2 class="hideme">Minerals</h2>
+                        <p class="narrow hideme">Aliquam eu arcu sapien. Vestibulum id tellus id ex venenatis molestie. Aenean vulputate mollis risus non accumsan. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non.</p>
                     	<div class="nutrient-list-container">
                         	<div class="nutrient-list-inner-container">
                                 <ol class="tab-list nutrient-list minerals">
@@ -194,7 +198,7 @@
                                 <div id="tab-calcium" class="tab-panel-nutrients active minerals">
                                 	
                                     <ol class="tab-list nutrient-info-list minerals">
-                                        <li><a class="tab-control active" href="#tab-calcium-a">Intro</a></li>
+                                        <li><a class="tab-control active" href="#tab-calcium-a">Overview</a></li>
                                         <li><a class="tab-control" href="#tab-calcium-b">Benefits</a></li>
                                         <li><a class="tab-control" href="#tab-calcium-c">Pairing</a></li>
                                         <li><a class="tab-control" href="#tab-calcium-d">Deficiencies</a></li>
@@ -285,9 +289,14 @@
                             
                         </div> <!-- NUTRIENT LIST CONTAINER -->
                     </div>
-                    <div id="tab4" class="tab-panel active proximates">
-                    	<h2 class="hideme">Proximates</h2>   
+                    
+                    
+                    
+                    <div id="tab-proximates" class="tab-panel proximates">
+                    	<h2 class="hideme">Proximates</h2>
+                        <p class="narrow hideme">Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat. Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero.</p>
                     	<div class="nutrient-list-container">
+                        	
                         	<div class="nutrient-list-inner-container">
                                 <ol class="tab-list nutrient-list proximates">
                                     <li><a class="tab-control active" href="#tab-water">Water</a></li>
@@ -303,26 +312,26 @@
                                 <div id="tab-water" class="tab-panel-nutrients active proximates">
                                 	
                                     <ol class="tab-list nutrient-info-list proximates">
-                                        <li><a class="tab-control active" href="#tab-water-a">Intro</a></li>
+                                        <li><a class="tab-control active" href="#tab-water-a">Overview</a></li>
                                         <li><a class="tab-control" href="#tab-water-b">Benefits</a></li>
                                         <li><a class="tab-control" href="#tab-water-c">Pairing</a></li>
                                         <li><a class="tab-control" href="#tab-water-d">Deficiencies</a></li>
                                     </ol>
                                     
                                     <div id="tab-water-a" class="tab-panel-descriptions active">
-                                    	<p>Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>                                    
+                                    	<p>Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>                                    
                                     </div>
                                     
                                     <div id="tab-water-b" class="tab-panel-descriptions">
-                                    	<p>Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.Aliquam eu arcu sapien.</p>                                    
+                                    	<p>Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Donec porttitor pharetra felis vitae volutpat.Aliquam eu arcu sapien.</p>                                    
                                     </div>
                                     
                                     <div id="tab-water-c" class="tab-panel-descriptions">
-                                    	<p>Aliquam eu arcu sapien. Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non.</p>                                    
+                                    	<p>Aliquam eu arcu sapien. Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non.</p>                                    
                                     </div>
                                     
                                     <div id="tab-water-d" class="tab-panel-descriptions">
-                                    	<p>Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>                                    
+                                    	<p>Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat. Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero.</p>                                    
                                     </div>
                                     
                                     <div class="button-container">
@@ -389,7 +398,125 @@
                     
                     </div> <!-- TAB 4 -->
                     
-                	<div id="tab5" class="tab-panel"></div>
+                	<div id="tab-vitamins" class="tab-panel vitamins">
+                    	<h2 class="hideme">Vitamins</h2>
+                        <p class="narrow hideme">Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero. Donec porttitor pharetra felis vitae volutpat. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra.</p>  
+                    	<div class="nutrient-list-container">
+                        	<div class="nutrient-list-inner-container">
+                                <ol class="tab-list nutrient-list vitamins">
+                                    <li><a class="tab-control active" href="#tab-vitamina">Vitamin A</a></li>
+                                    <li><a class="tab-control" href="#tab-vitaminb1">Vitamin B1 (Thiamin)</a></li>
+                                    <li><a class="tab-control" href="#tab-vitaminb2">Vitamin B2 (Riboflavin)</a></li>
+                                    <li><a class="tab-control" href="#tab-vitaminb3">Vitamin B3 (Niacin)</a></li>
+                                    <li><a class="tab-control" href="#tab-vitaminb6">Vitamin B6 (Piridoxine)</a></li>
+                                    <li><a class="tab-control" href="#tab-vitaminb12">Vitamin B12 (Cyano-cobalamin)</a></li>
+                                    <li><a class="tab-control" href="#tab-vitaminc">Vitamin C (Ascorbic Acid)</a></li>
+                                    <li><a class="tab-control" href="#tab-vitamind">Vitamin D (Calciferol)</a></li>
+                                    <li><a class="tab-control" href="#tab-vitamine">Vitamin E (Tocopherois)</a></li>
+                                    <li><a class="tab-control" href="#tab-folate">Folate (Folic Acid)</a></li>
+                                </ol>
+                                
+                                <div id="tab-vitamina" class="tab-panel-nutrients active vitamins">
+                                	
+                                    <ol class="tab-list nutrient-info-list vitamins">
+                                        <li><a class="tab-control active" href="#tab-vitamina-a">Overview</a></li>
+                                        <li><a class="tab-control" href="#tab-vitamina-b">Benefits</a></li>
+                                        <li><a class="tab-control" href="#tab-vitamina-c">Pairing</a></li>
+                                        <li><a class="tab-control" href="#tab-vitamina-d">Deficiencies</a></li>
+                                    </ol>
+                                    
+                                    <div id="tab-vitamina-a" class="tab-panel-descriptions active">
+                                    	<p>Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Aliquam eu arcu sapien. Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie.</p>                                    
+                                    </div>
+                                    
+                                    <div id="tab-vitamina-b" class="tab-panel-descriptions">
+                                    	<p>Donec porttitor pharetra felis vitae volutpat.Aliquam eu arcu sapien. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non.</p>                                    
+                                    </div>
+                                    
+                                    <div id="tab-vitamina-c" class="tab-panel-descriptions">
+                                    	<p>Donec porttitor pharetra felis vitae volutpat.Aliquam eu arcu sapien. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>                                    
+                                    </div>
+                                    
+                                    <div id="tab-vitamina-d" class="tab-panel-descriptions">
+                                    	<p>Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>                                    
+                                    </div>
+                                    
+                                    <div class="button-container">
+                                    	<a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                                                    
+                                </div>
+                                
+                                <div id="tab-vitaminb1" class="tab-panel-nutrients vitamins">
+                                	<p>Aliquam eu arcu sapien. Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                </div>
+                                
+                                <div id="tab-vitaminb2" class="tab-panel-nutrients vitamins">
+                                	<p>Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>
+                                	<div class="button-container">
+                                        <a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-vitaminb3" class="tab-panel-nutrients vitamins">
+                                	<p>Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.Aliquam eu arcu sapien.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-vitaminb6" class="tab-panel-nutrients vitamins">
+                                	<p>Vestibulum id tellus id ex venenatis molestie. Phasellus pulvinar tellus sit amet libero pellentesque, sit amet rutrum lorem molestie. Ut varius quam diam, vitae tempus sem cursus non. Pellentesque ac cursus libero.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-vitaminb12" class="tab-panel-nutrients vitamins">
+                                	<p>Ut varius quam diam, vitae tempus sem cursus non. Praesent nec leo at risus tristique pharetra. Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-vitaminc" class="tab-panel-nutrients vitamins">
+                                	<p>Aenean vulputate mollis risus non accumsan. Donec porttitor pharetra felis vitae volutpat. Curabitur volutpat elementum metus, imperdiet dapibus dui mattis eu. Mauris pellentesque vel lorem non iaculis. Pellentesque ac cursus libero.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-vitamind" class="tab-panel-nutrients vitamins">
+                                	<p>Donec porttitor pharetra felis vitae volutpat. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-vitamine" class="tab-panel-nutrients vitamins">
+                                	<p>Donec porttitor pharetra felis vitae volutpat. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                </div>
+                                <div id="tab-folate" class="tab-panel-nutrients vitamins">
+                                	<p>Donec porttitor pharetra felis vitae volutpat. Pellentesque ac cursus libero. Praesent nec leo at risus tristique pharetra.</p>
+                                    <div class="button-container">
+                                        <a class="button dark button-small vitamins">Highest</a>
+                                    	<a class="button dark button-small vitamins">Lowest</a>
+                                    </div>
+                                </div>
+                                                             
+                            </div> <!-- NUTRIENT LIST INNER CONTAINER -->
+                            
+                        </div> <!-- NUTRIENT LIST CONTAINER -->
+                    </div>
                     
                 </article>
             </section>
