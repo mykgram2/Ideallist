@@ -429,20 +429,20 @@
 		}
 		
 			.letter-symbol.amino-acids:hover {
-				color: #b5cd44;
+				color: #8ecd44;
 			}
 			
 				.tab-control.letter-symbol.amino-acids.active {
-					color: #b5cd44;
+					color: #8ecd44;
 					background-color: #FFFFFF;
 				}
 			
 			.letter-symbol.minerals:hover {
-				color: #5bd7aa;
+				color: #5bd7c4;
 			}
 			
 				.tab-control.letter-symbol.minerals.active {
-					color: #5bd7aa;
+					color: #5bd7c4;
 					background-color: #FFFFFF;
 				}
 			
@@ -505,13 +505,13 @@
 	/* MINERALS SECTION HOVER */
 		
 		.modular-section.minerals:hover .letter-symbol, .modular-section.minerals:hover h3, .modular-section.minerals:hover .arrow  {
-			color: #5bd7aa;
-			border-color: #5bd7aa;
+			color: #5bd7c4;
+			border-color: #5bd7c4;
 		}
 		
 		.minerals.accordion-control.active .letter-symbol {
-			color: #5bd7aa;
-			border-color: #5bd7aa;
+			color: #5bd7c4;
+			border-color: #5bd7c4;
 		}
 
 
@@ -599,13 +599,13 @@
 			.nutrient-list.amino-acids li a.active {
 				cursor: pointer;
 				color: #FFFFFF;
-				background-color: #b5cd44;
+				background-color: #8ecd44;
 			}
 			
 			.nutrient-list.minerals li a.active {
 				cursor: pointer;
 				color: #FFFFFF;
-				background-color: #5bd7aa;
+				background-color: #5bd7c4;
 			}
 			
 			.nutrient-list.proximates li a.active {
@@ -656,12 +656,12 @@
 				
 				.nutrient-info-list.amino-acids li a.active {
 					color: #FFFFFF;
-					border-bottom: 4px solid #b5cd44;
+					border-bottom: 4px solid #8ecd44;
 				}
 				
 				.nutrient-info-list.minerals li a.active {
 					color: #FFFFFF;
-					border-bottom: 4px solid #5bd7aa;
+					border-bottom: 4px solid #5bd7c4;
 				}
 				
 				.nutrient-info-list.proximates li a.active {
@@ -742,8 +742,8 @@
 		
 		.button-small.amino-acids:hover {
 			color: #FFFFFF;
-			background-color: #b5cd44;
-			border: solid 1px #b5cd44;
+			background-color: #8ecd44;
+			border: solid 1px #8ecd44;
 		}	
 	
 	.button-small.lipids {
@@ -766,8 +766,8 @@
 		
 		.button-small.minerals:hover {
 			color: #FFFFFF;
-			background-color: #5bd7aa;
-			border: solid 1px #5bd7aa;
+			background-color: #5bd7c4;
+			border: solid 1px #5bd7c4;
 		}
 		
 	.button-small.proximates {
