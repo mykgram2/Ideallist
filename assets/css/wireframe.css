@@ -31,6 +31,11 @@
 		font-weight: bold;
 	}
 	
+	h4 {
+		font-size: 18px;
+		font-weight: bold;
+	}
+	
 	p {
 		margin: 30px auto 50px auto;
 		padding: 0 auto;
@@ -289,7 +294,7 @@
 		left: 0;
 		height: 100%;
 		width: 100%;
-		background: linear-gradient(241deg, #FF3E5B, #4eb3ed, #fc95fb, #fab63f);
+		background: linear-gradient(241deg, #FF3E5B, #4eb3ed, #d07bd3, #fab63f);
 		background-size: 600% 600%;
 		
 		-webkit-animation: AnimationName 40s ease infinite;
@@ -338,7 +343,7 @@
 			padding: 0 20px;
 		}
 	
-		.content h2, .content h3 {
+		.content h2, .content h3, .content h4 {
 			color: #999999;
 		}
 		
@@ -423,12 +428,21 @@
 			background-color: #FFFFFF;
 		}
 		
+			.letter-symbol.amino-acids:hover {
+				color: #b5cd44;
+			}
+			
+				.tab-control.letter-symbol.amino-acids.active {
+					color: #b5cd44;
+					background-color: #FFFFFF;
+				}
+			
 			.letter-symbol.minerals:hover {
-				color: #37c7c9;
+				color: #5bd7aa;
 			}
 			
 				.tab-control.letter-symbol.minerals.active {
-					color: #37c7c9;
+					color: #5bd7aa;
 					background-color: #FFFFFF;
 				}
 			
@@ -438,6 +452,15 @@
 			
 				.tab-control.letter-symbol.proximates.active {
 					color: #4eb3ed;
+					background-color: #FFFFFF;
+				}
+				
+			.letter-symbol.vitamins:hover {
+				color: #d07bd3;
+			}
+			
+				.tab-control.letter-symbol.vitamins.active {
+					color: #d07bd3;
 					background-color: #FFFFFF;
 				}
 	
@@ -482,13 +505,13 @@
 	/* MINERALS SECTION HOVER */
 		
 		.modular-section.minerals:hover .letter-symbol, .modular-section.minerals:hover h3, .modular-section.minerals:hover .arrow  {
-			color: #37c7c9;
-			border-color: #37c7c9;
+			color: #5bd7aa;
+			border-color: #5bd7aa;
 		}
 		
 		.minerals.accordion-control.active .letter-symbol {
-			color: #37c7c9;
-			border-color: #37c7c9;
+			color: #5bd7aa;
+			border-color: #5bd7aa;
 		}
 
 
@@ -508,22 +531,29 @@
 	/* VITAMINS SECTION HOVER */
 		
 		.modular-section.vitamins:hover .letter-symbol, .modular-section.vitamins:hover h3, .modular-section.vitamins:hover .arrow {
-			color: #fc95fb;
-			border-color: #fc95fb;
+			color: #d07bd3;
+			border-color: #d07bd3;
 		}
 		
 		.vitamins.accordion-control.active .letter-symbol {
-			color: #fc95fb;
-			border-color: #fc95fb;
+			color: #d07bd3;
+			border-color: #d07bd3;
 		}
 	
 	.nutrient-list-container {
 		margin: 40px 0;
 		padding: 30px;
 		height: 480px;
-		background-color: #3a3b3e;
+		background-color: #434242;
 		border-top: 8px solid #a4a6ae;
 	}
+	
+		.nutrient-list-container p {
+			color: #CCCCCC;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: left;
+		}
 	
 	.nutrient-list-inner-container {
 		position: relative;
@@ -569,19 +599,25 @@
 			.nutrient-list.amino-acids li a.active {
 				cursor: pointer;
 				color: #FFFFFF;
-				background-color: #45d499;
+				background-color: #b5cd44;
 			}
 			
 			.nutrient-list.minerals li a.active {
 				cursor: pointer;
 				color: #FFFFFF;
-				background-color: #37c7c9;
+				background-color: #5bd7aa;
 			}
 			
 			.nutrient-list.proximates li a.active {
 				cursor: pointer;
 				color: #FFFFFF;
 				background-color: #4eb3ed;
+			}
+			
+			.nutrient-list.vitamins li a.active {
+				cursor: pointer;
+				color: #FFFFFF;
+				background-color: #d07bd3;
 			}
 			
 				.nutrient-list li.accordion-control.active a {
@@ -620,17 +656,22 @@
 				
 				.nutrient-info-list.amino-acids li a.active {
 					color: #FFFFFF;
-					border-bottom: 4px solid #45d499;
+					border-bottom: 4px solid #b5cd44;
 				}
 				
 				.nutrient-info-list.minerals li a.active {
 					color: #FFFFFF;
-					border-bottom: 4px solid #37c7c9;
+					border-bottom: 4px solid #5bd7aa;
 				}
 				
 				.nutrient-info-list.proximates li a.active {
 					color: #FFFFFF;
 					border-bottom: 4px solid #4eb3ed;
+				}
+				
+				.nutrient-info-list.vitamins li a.active {
+					color: #FFFFFF;
+					border-bottom: 4px solid #d07bd3;
 				}
 	
 	.tab-panel {
@@ -650,6 +691,10 @@
 			margin: 0 auto;
 			color: #CCCCCC;
 			font-family: Arial, Helvetica, sans-serif;
+			color: #777777;
+			font-size: 16px;
+			line-height: 24px;
+			text-align: left;
 		}
 		
 	.tab-panel-nutrients {
@@ -685,7 +730,7 @@
 		}
 		
 		.tab-panel.button-container {
-			padding-left: 30px;
+			/* padding-left: 30px; */
 		}
 	
 	
@@ -697,8 +742,8 @@
 		
 		.button-small.amino-acids:hover {
 			color: #FFFFFF;
-			background-color: #45d499;
-			border: solid 1px #45d499;
+			background-color: #b5cd44;
+			border: solid 1px #b5cd44;
 		}	
 	
 	.button-small.lipids {
@@ -721,8 +766,8 @@
 		
 		.button-small.minerals:hover {
 			color: #FFFFFF;
-			background-color: #37c7c9;
-			border: solid 1px #37c7c9;
+			background-color: #5bd7aa;
+			border: solid 1px #5bd7aa;
 		}
 		
 	.button-small.proximates {
@@ -738,15 +783,15 @@
 		}
 		
 	.button-small.vitamins {
-		color: #fc95fb;
+		color: #CCCCCC;
 		background-color: transparent;
-		border: solid 1px #fc95fb;
+		border: solid 1px #CCCCCC;
 	}
 		
 		.button-small.vitamins:hover {
 			color: #FFFFFF;
-			background-color: #fc95fb;
-			border: solid 1px #fc95fb;
+			background-color: #d07bd3;
+			border: solid 1px #d07bd3;
 		}
 	
 		
@@ -758,8 +803,8 @@
 		
 		.button-small:hover {
 			color: #FF6600;
-		background-color: transparent;
-		border: solid 1px #FF6600;
+			background-color: transparent;
+			border: solid 1px #FF6600;
 		}
 	
 	/* .button-small {
