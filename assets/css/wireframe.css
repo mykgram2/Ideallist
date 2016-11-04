@@ -295,20 +295,24 @@
 		padding: 40px 0;
 		width: 50%;
 		height: 320px;
-		background-color: #555555;
+		background-color: #333333;
 		background-position: center;
-		background-size: cover;
+		background-size: 100%;
 		background-repeat: no-repeat;
+		-webkit-transition: all 600ms;
+		-moz-transition: all 600ms;
+		-o-transition: all 600ms;
+		transition: all 600ms;
 	}
 	
 		.split-container:hover {
 			background-color: #FF6600;
-			opacity: 0.8;
+			/* background-size: 105%; */
 		}
 		
-			/* .split-container:hover hr.short {
+			.split-container:hover hr.short {
 				border-bottom-color: #FFFFFF;
-			} */
+			}
 		
 		.split-container h2, .split-container p  {
 			padding: 0 100px;
@@ -319,11 +323,11 @@
 		}
 		
 	#split-container-one {
-		background-image:url(../../images/berries-bandw.jpg);
+		background-image:url(../../images/berries.png);
 	}
 	
 	#split-container-two {
-		background-image:url(../../images/chia-seeds-bandw.jpg);
+		background-image:url(../../images/chia-seeds.png);
 	}
 	
 	.gradient {
@@ -374,7 +378,7 @@
 		}
 		
 		.content.full.nutrient-content {
-			margin: 60px auto -100px auto;
+			margin: 60px auto 0 auto;
 		}
 	
 		.narrow {
@@ -585,8 +589,8 @@
 	.nutrient-list-container {
 		margin: 40px 0 0 0;
 		padding: 30px;
-		height: 480px;
-		background-color: #403f3e;
+		height: 580px;
+		background-color: #383635;
 		border-top: 8px solid #a4a6ae;
 	}
 	
