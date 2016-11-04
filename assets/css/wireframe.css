@@ -3,7 +3,7 @@
 
 	body {
 		margin: 0;
-		font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+		font-family: 'Montserrat', sans-serif;
 		background-color: #EEEEEE;
 	}
 	
@@ -153,8 +153,8 @@
 		top: 0;
 		height: 98px;
 		width: 100%;
-		background-color: #FFFFFF;
-		border-bottom: solid 1px #FFFFFF;
+		background-color: #444444;
+		border-bottom: solid 2px #FFFFFF;
 		-webkit-transition: all 200ms ease-in-out;
 		-moz-transition: all 200ms ease-in-out;
 		-o-transition: all 200ms ease-in-out;
@@ -281,7 +281,7 @@
 		-moz-animation: AnimationName 40s ease infinite;
 		animation: AnimationName 40s ease infinite;
 		
-		opacity: 0.55;
+		opacity: 0.25;
 		z-index: 10;
 	}
 		
@@ -808,7 +808,7 @@
 	}
 			
 	footer {
-		height: 320px;
+		height: 150px;
 		width: 100%;
 		background-color: #444444;
 		-webkit-transition: all 0.3s ease-in-out;
